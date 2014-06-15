@@ -1,9 +1,9 @@
- 
-KGIS
+ KGIS
 =====
 
 
-#Wie ben ik
+Wie ben ik
+---------
 
 Ik ben een Freelance GIS-consultant. Ik ben beschikbaar als geodata-analyst en GIS-programmeur. 
 Freelance werk ik voornamelijk op open source GIS technologie zoals QGIS en Geoserver. 
@@ -20,13 +20,14 @@ Voor Agendschap Geografische Informatie Vlaanderen (AGIV) ontwikkelde ik een Plu
 Bij stad Antwerpen werk ik op webmapping met ESRI arcgis-server. Voor de rest doe ik voorl allerlei GIS analyses op data van het Stad. De meeste analyses zijn gerelateerd aan adressering-geocoding, ruimtelijke relaties,  nabijheids analyses (routing, service area's ed.) voor onder andere MER studies, ruimtelijke ordening or bouwvergunningen.
 
 
-#Contacteer mij
+Contacteer mij
+-------------
 
 **Adres:**
 
-       Kay Warrie
-       Molenstraat 18
-       3191 Hever 
+ Kay Warrie
+ Molenstraat 18
+ 3191 Hever 
        
 **Telefoon:** 0494 47 38 00
 
