@@ -1,0 +1,35 @@
+ 
+KGIS
+=====
+
+
+#Wie ben ik
+
+Ik ben een Freelance GIS-consultant. Ik ben beschikbaar als geodata-analyst en GIS-programmeur. 
+Freelance werk ik voornamelijk op open source GIS technologie zoals QGIS en Geoserver. 
+Ik heb een uitgebreide kenis van dit open source GIS zoals Postgis en Geoserver en ook ESRI-arcgis gebaseerde Toepassingen, inclusief het opzetten van web-viewers voor eindgebruikers en het uitbreiden van desktop GIS-toepassingen zoals QGISe Arcmap.
+
+Ik kan helpen met het opzetten van een Geodata infrastructuur op basis van open source technologie of migreren van een gesloten infrastructuur naar een open infrastructur.   
+
+Ik heb ervaring in programeren van scripts en toepassingen in python of dotnet en de frontend van webmaps met javascript met de openlayers, leaflet of arcgis-javascript bibliotheken.
+
+Zo maakte ik een tool om snel crab-opdates te doen op basis van XGRAB en heb ik meegewerkt aan de het stadsplan op website van stad Antwerpen. 
+
+Voor Agendschap Geografische Informatie Vlaanderen (AGIV) ontwikkelde ik een Plugin voor QGIS met diverse webservices uit de Geopunt-API.  
+
+Bij stad Antwerpen werk ik op webmapping met ESRI arcgis-server. Voor de rest doe ik voorl allerlei GIS analyses op data van het Stad. De meeste analyses zijn gerelateerd aan adressering-geocoding, ruimtelijke relaties,  nabijheids analyses (routing, service area's ed.) voor onder andere MER studies, ruimtelijke ordening or bouwvergunningen.
+
+
+#Contacteer mij
+
+**Adres:**
+
+       Kay Warrie
+       Molenstraat 18
+       3191 Hever 
+       
+**Telefoon:** 0494 47 38 00
+
+**Email:** [kaywarrie@gmail.com](mailto:kaywarrie@gmail.com)
+
+**BTW:** BE.0552.935.137
