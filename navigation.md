@@ -1,8 +1,6 @@
 [gimmick:theme](slate)
  
-<a href="index.html#!index.md" target="_blank"><img height="40" src="images/LOGO_small.png"/></a>
-
-[diensten]()
+<a href="index.html#!index.md" ><img height="30" src="images/LOGO_small.png"/></a>
 
 [projecten]()
 
@@ -14,4 +12,4 @@
   * <a href="index.html#!projects/geopuntPoi.md" ><img src="projects/images/geopuntPoiSmall.png" /> Zoek een Plaats - interesse punt</a>
   * <a href="index.html#!projects/geopuntGIPOD.md" ><img src="projects/images/geopuntGIPODsmall.png" /> GIPOD</a>
 
-[over mij](aboutMe.md)
+[Meer over mij](http://warrieka.github.io/#!index.md)
