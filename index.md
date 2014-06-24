@@ -45,6 +45,6 @@ Contacteer mij
        
 **Telefoon:** 0494 47 38 00
 
-**Email:** [kaywarrie@gmail.com](mailto:kaywarrie@gmail.com)
+**Email:** [kay@kgis.be](mailto:kay@kgis.be)
 
 **BTW:** BE.0552.935.137
