@@ -8,7 +8,8 @@ KGIS
 Wie ben ik
 ---------
 
-Ik ben een Freelance GIS-consultant. Ik ben beschikbaar als geodata-analyst en GIS-programmeur. 
+Ik ben Kay Warrie een Freelance GIS-consultant. KGIS is mijn bedrijfje.
+Ik ben beschikbaar als geodata-analyst en GIS-programmeur. 
 Freelance werk ik voornamelijk op open source GIS technologie zoals QGIS en Geoserver. 
 
 Ik heb een uitgebreide kennis van dit open source GIS zoals Postgis en Geoserver en ook ESRI-arcgis gebaseerde Toepassingen, inclusief het opzetten van web-viewers voor eindgebruikers en het uitbreiden van desktop GIS-toepassingen zoals QGIS en Arcmap.
@@ -37,14 +38,16 @@ In verleden werkte ik op maritieme gegevens: hydrografie, bodemmodellen, baggers
 Contacteer mij
 -------------
 
+**Naam:**
+ Kay Warrie
+
 **Adres:**
 
- Kay Warrie
- Molenstraat 18
+ Molenstraat 18, 
  3191 Hever 
        
 **Telefoon:** 0494 47 38 00
 
-**Email:** [kaywarrie@gmail.com](mailto:kaywarrie@gmail.com)
+**Email:** [kay@kgis.com](mailto:kgis@kgis.com)
 
 **BTW:** BE.0552.935.137
