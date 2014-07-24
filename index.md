@@ -48,6 +48,6 @@ Contacteer mij
        
 **Telefoon:** 0494 47 38 00
 
-**Email:** [kay@kgis.com](mailto:kgis@kgis.com)
+**Email:** [kay@kgis.com](mailto:kgis@kgis.be)
 
 **BTW:** BE.0552.935.137
