@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KGIS</title><link>http://kgis.be/</link><description></description><atom:link href="http://kgis.be/feeds/kay-warrie.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 20 Sep 2014 10:20:00 +0200</lastBuildDate><item><title>geopunt4qgis</title><link>http://kgis.be/geopunt4qgis.html</link><description>&lt;h1&gt;Geopunt4Qgis&lt;/h1&gt;
 &lt;p&gt;&lt;img alt="Geopunt voor QGIS" src="/images/logogeopunt4Q.png" title="Geopunt voor QGIS" /&gt;&lt;/p&gt;
+&lt;p&gt;Zie ook &lt;a href="http://www.geopunt.be/voor-experts/geopunt-plug-ins"&gt;http://www.geopunt.be/voor-experts/geopunt-plug-ins&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Doelstelling&lt;/h2&gt;
 &lt;p&gt;geopunt4Qgis - &lt;em&gt;"Geopunt voor QGIS"&lt;/em&gt; is een plugin voor de &lt;a href="http://www.qgis.org/"&gt;QGIS&lt;/a&gt; open source desktop GIS, die de webservices van het Vlaamse geoportaal Geopunt ontsluit naar desktop GIS-gebruikers. &lt;/p&gt;
 &lt;p&gt;Het Vlaamse Geoportaal Geopunt biedt een aantal geografische diensten (web-services) aan die mogen gebruikt worden door derden zoals andere overheden en bedrijven.&lt;/p&gt;
@@ -13,19 +14,21 @@ De achterliggende zoekservice voor deze diensten is niet direct bruikbaar in QGI
 &lt;li&gt;&lt;strong&gt;Locaties zoeken&lt;/strong&gt;, door koppeling van adressen aan de crab-databank, bijvoorbeeld de scholendatabank van de Vlaamse overheid. (documentatie  nog niet beschikbaar)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Innames van openbaar domein&lt;/strong&gt;, van het Generiek Informatieplatform Openbaar Domein (GIPOD)  &lt;a href="hhttp://gipod.api.agiv.be/#!index.md"&gt;GIPOD&lt;/a&gt;, de officiële databank met manifestaties, wegenwerken en andere obstructies op het openbaar domein.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hoogteprofiel&lt;/strong&gt;, een dienst waarmee de hoogte, in digitaal hoogte model Vlaanderen, langsheen een lijn kan worden opgevraagd.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Percelen zoeken&lt;/strong&gt;, op getrapte wijze op de basis van gemeente naar departement, sectie dan naar perceelnummer in KADMAP.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Metadata zoekdienst&lt;/strong&gt;, deze diensten worden gebruik in het &lt;a href="https://metadata.geopunt.be"&gt;metadatacenter&lt;/a&gt; van geopunt en bevat ondermeer metadatafiches van AGIV, het samenwerkingsverband MercatorNet en DOV. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Om GIS gebruikers binnen en buiten de Vlaamse Overheid dezelfde functionaliteit ter beschikking te stellen als aangeboden in Geopunt, wenst AGIV deze gebruikers te voorzien van software plug-ins die deze functionaliteit geïntegreerd aanbieden binnen de meest gangbare GIS desktop  omgevingen. 
 Op basis van voorafgaand overleg met de GDI-Vlaanderen gemeenschap werd volgende GIS software geselecteerd: Quantum GIS (QGIS) v2.0 Dufour en ESRI ArcMap v10. &lt;/p&gt;
 &lt;h2&gt;Functies&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntAddress.md" &gt;&lt;img src="/images/geopuntAddressSmall.png" /&gt; Zoek een Adres&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntReverse.md" &gt;&lt;img src="/images/geopuntReverseSmall.png" /&gt; Prik een Adres op kaart&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntBatchgeocode.md" &gt;&lt;img src="/images/geopuntBatchgeocodeSmall.png" /&gt; CSV-adresbestanden geocoderen&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntPoi.md" &gt;&lt;img src="/images/geopuntPoiSmall.png" /&gt; Zoek een Plaats - interesse punt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntGIPOD.md" &gt;&lt;img src="/images/geopuntGIPODsmall.png" /&gt; GIPOD&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntElevation.md" &gt;&lt;img src="/images/geopuntElevationSmall.png" /&gt; Hoogteprofiel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntDatacatalog.md" &gt;&lt;img src="/images/geopuntDataCatalogusSmall.png" /&gt; Geopunt catalogus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntAddress.md" &gt;&lt;img src="images/geopuntAddressSmall.png" /&gt; Zoek een Adres&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntReverse.md" &gt;&lt;img src="images/geopuntReverseSmall.png" /&gt; Prik een Adres op kaart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntBatchgeocode.md" &gt;&lt;img src="images/geopuntBatchgeocodeSmall.png" /&gt; CSV-adresbestanden geocoderen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntPoi.md" &gt;&lt;img src="images/geopuntPoiSmall.png" /&gt; Zoek een Plaats - interesse punt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntGIPOD.md" &gt;&lt;img src="images/geopuntGIPODsmall.png" /&gt; GIPOD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntElevation.md" &gt;&lt;img src="images/geopuntElevationSmall.png" /&gt; Hoogteprofiel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntParcel.md" &gt;&lt;img src="images/geopuntParcelSmall.png" /&gt; Zoek een perceel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://warrieka.github.io/index.html#!geopuntDatacatalog.md" &gt;&lt;img src="images/geopuntDataCatalogusSmall.png" /&gt; Geopunt catalogus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Systeem vereisten&lt;/h2&gt;
 &lt;ul&gt;
@@ -48,7 +51,6 @@ Op basis van voorafgaand overleg met de GDI-Vlaanderen gemeenschap werd volgende
 &lt;h4&gt;Online Bronnen:&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;a href="http://www.geopunt.be/over-geopunt"&gt;http://www.geopunt.be&lt;/a&gt;&lt;/em&gt; &lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;a href="http://gditestbed.agiv.be/"&gt;http://gditestbed.agiv.be/&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;a href="https://www.agiv.be/"&gt;https://www.agiv.be/&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kay Warrie</dc:creator><pubDate>Sat, 20 Sep 2014 10:20:00 +0200</pubDate><guid>tag:kgis.be,2014-09-20:geopunt4qgis.html</guid></item><item><title>Kaart Stad Antwerpen</title><link>http://kgis.be/kaart-stad-antwerpen.html</link><description>&lt;iframe frameborder="0" scrolling="no"  height="250" style="width:90%" src="http://warrieka.github.io/stadsplan/index.html"&gt;
 &lt;/iframe&gt;
