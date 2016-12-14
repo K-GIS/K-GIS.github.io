@@ -46,7 +46,11 @@ Using the Constraints tab, you can manage constraints line primary-foreign key r
 Creating a New Table
 --------------------
 
-Now that we have gone through the process of working with existing tables in our database, let's use DB Manager to create a new table.
+The database mamager providers a GUI to create tables. 
+
+###Task
+
+Let's use DB Manager to create a new table.
 
 -   If it is not already open, open the DB Manager window, and expand the tree until you see the list of tables already in your databse.
 -   From the menu select Table --&gt; Create Table to bring up the Create Table dialog.
@@ -61,6 +65,24 @@ Now that we have gone through the process of working with existing tables in our
 
 You can now inspect your table in the DB Manager and you will of course find that there is no data in it. From here you can Toggle Editing on the layer menu and begin to add places to your table.
 
+
+Importing and exporting Data into/from a Database with DB Manager
+----------------------------------------------
+
+Import:
+
+-   Click the Import layer/file button on the toolbar in the DB Manager dialog. ![image](../static/databases/import_layer.png)
+-   you can select a layer form the map or browse to a location on your drive. 
+-   Click the Update Options button to pre-fill some of the form values.
+-   You can reproject you data by selecting a different source SRID and target SRID.
+-   Enable the checkbox to Create Spatial Index
+-   Click OK to perform the import.
+
+Export:
+
+Of course DB Manager can also be used to export data from your spatial databases, so lets take a look at how that is done. Select a layer in the Tree and click the Export to File button on the toolbar to open the Export to vector file dialog.
+
+![image](../static/databases/export_to_vector.png)
 
 Executing SQL Queries with DB Manager
 --------------------------------------
@@ -89,23 +111,6 @@ DB Manager also provides a way for you to write SQL queries against your databas
 
 The layers that matched your query are now displayed on your map. You can of course use this query tool to execute any arbitrary SQL command including many of the ones we looked at in previous modules and sections.
 
-Importing and exporting Data into/from a Database with DB Manager
-----------------------------------------------
-
-Import:
-
--   Click the Import layer/file button on the toolbar in the DB Manager dialog. ![image](../static/databases/import_layer.png)
--   you can select a layer form the map or browse to a location on your drive. 
--   Click the Update Options button to pre-fill some of the form values.
--   You can reproject you data by selecting a different source SRID and target SRID.
--   Enable the checkbox to Create Spatial Index
--   Click OK to perform the import.
-
-Export:
-
-Of course DB Manager can also be used to export data from your spatial databases, so lets take a look at how that is done. Select a layer in the Tree and click the Export to File button on the toolbar to open the Export to vector file dialog.
-
-![image](../static/databases/export_to_vector.png)
 
 
 
