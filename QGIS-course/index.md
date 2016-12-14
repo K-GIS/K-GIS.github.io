@@ -17,9 +17,9 @@ Contents
 
 ### Data analyses, processing toolbox, ModelBuilder
 * [Database Theory](task/RDBMS.md)
+* [Spatial Query's](task/spatial_queries.md)
 * [Database connections in the QGIS-browser](task/db_browser.md)
 * [The DB Manager](task/db_manager.md)
-* [Spatial Query's](task/spatial_queries.md)
 
 ###  Rasterdata processing and visualisation
 * [Introduction to Rasterdata](task/intro_raster.md)
