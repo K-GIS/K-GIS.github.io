@@ -87,7 +87,9 @@ Of course DB Manager can also be used to export data from your spatial databases
 Executing SQL Queries with DB Manager
 --------------------------------------
 
-DB Manager also provides a way for you to write SQL queries against your database tables and to view the results. We have already seen this type of functionality in the Browser panel, but lets look at it again here with DB Manager.
+DB Manager also provides a way for you to write SQL queries against your database tables and to view the results. 
+
+### Task
 
 -   Select the BBQ table in the tree.
 -   Select the SQL window button in the DB Manager toolbar.
@@ -111,7 +113,13 @@ DB Manager also provides a way for you to write SQL queries against your databas
 
 The layers that matched your query are now displayed on your map. You can of course use this query tool to execute any arbitrary SQL command including many of the ones we looked at in previous modules and sections.
 
+### Extra Task
 
+Lets try a spatial Query now.
+
+First download the VELO-stations from Antwerp and copy the into your database, make sutre that output CRS is Lambert Belge, SRID=31370: http://geodata.antwerpen.be/arcgissql/rest/services/P_Publiek/OpenDataAntwerpen/MapServer
+
+Then write a quert that searchs the velo station within 0.5 km of the city hall of Antwerp, which lies in Belge Lambert coordinates: (152119 , 212356 )
 
 
 
