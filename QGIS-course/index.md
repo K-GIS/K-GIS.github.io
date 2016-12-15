@@ -9,13 +9,13 @@ Contents
 * [Getting data from free sources,  like OSM](task/preparing_data.md)
 * [Reprojecting and Transforming Data](task/reproject_transform.md)
 
-### Working with databases 
+### Data analyses, processing toolbox, ModelBuilder
 * [Introduction to the processing framework](task/intro_processing.md)
 * [Example John Snow](task/john_snow.md)
 * [Batch Processing](task/batch_processing.md)
 * [Working with modelbuilder](task/processing_graphical_modeler.md)
 
-### Data analyses, processing toolbox, ModelBuilder
+### Working with databases 
 * [Database Theory](task/RDBMS.md)
 * [Spatial Query's](task/spatial_queries.md)
 * [Database connections in the QGIS-browser](task/db_browser.md)
