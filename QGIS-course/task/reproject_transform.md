@@ -150,6 +150,8 @@ Look at the new values in your attribute table. This is much more useful, as peo
 Creating Your Own Projection
 ----------------------------
 
+You look up a SRS yourself with:  http://epsg.io/
+
 There are many more projections than just those included in QGIS by default. You can also create your own projections.
 
 ![image](../static/vector_analysis/custom_crs.png)
