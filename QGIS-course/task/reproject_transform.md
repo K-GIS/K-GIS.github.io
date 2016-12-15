@@ -111,10 +111,12 @@ Notice how the areas are all very small; probably zero. This is because these ar
 
 But it won't help to just use 'on the fly' reprojection. 'On the fly' does what it says - it doesn't change the data, it just reprojects the layers as they appear on the map. To truly reproject the data itself, you need to export it to a new file using a new projection.
 
--   Right-click on the buildings layer in the Layers list.
+Using the openstreetmap data from previous exercise:
+
+-   Right-click on the openstreetmap layer in the Layers list.
 -   Select Save As... in the menu that appears. You will be shown the Save vector layer as... dialog.
 -   Click on the Browse button next to the Save as field.
--   Navigate to a folder and specify the name of the new layer as buildings\_reprojected.shp.
+-   Navigate to a folder and specify the name of the new layer as openstreetmap\_reprojected.shp.
 -   Leave the Encoding unchanged.
 -   Change the value of the Layer CRS dropdown to Selected
     CRS.
