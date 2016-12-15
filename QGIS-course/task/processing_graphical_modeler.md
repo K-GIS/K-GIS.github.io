@@ -6,7 +6,7 @@ Intro
 
 GIS Workflows typically involve many steps - with each step generating intermediate output that is used by the next step. If you change the input data or want to tweak a parameter, you will need to run through the entire process again manually. Fortunately, QGIS has a graphical modeler built-in that can help you define your workflow and run it with a single invocation. You can also run these workflows as a batch over a large number of inputs.
 
-Make sure the SAGA-toolbox is enable in the processing settings.
+Make sure the SAGA-toolbox is enabled in the processing settings.
 
 **Goal of this task:** This tutorial shows how to build a model to extract areas for a particular class from a classified land use raster.
 
