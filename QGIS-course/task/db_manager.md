@@ -117,7 +117,7 @@ The layers that matched your query are now displayed on your map. You can of cou
 
 Lets try a spatial Query now.
 
-First download the VELO-stations from Antwerp and copy the into your database, make sutre that output CRS is Lambert Belge, SRID=31370: http://geodata.antwerpen.be/arcgissql/rest/services/P_Publiek/OpenDataAntwerpen/MapServer
+First download the VELO-stations from Antwerp and copy the into your database, make sure that output CRS is Lambert Belge, SRID=31370: http://geodata.antwerpen.be/arcgissql/rest/services/P_Publiek/OpenDataAntwerpen/MapServer
 
 Then write a query that searches the velo station within 0.5 km of the city hall of Antwerp, which lies in Belge Lambert coordinates at (152119 , 212356 )
 
