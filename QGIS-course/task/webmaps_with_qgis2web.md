@@ -85,5 +85,8 @@ You can copy the contents of this folder to a web server to have a full featured
 
 ![image](../static/leaflet_maps_with_qgis2leaf/images/12.png)
 
+### Extra task
 
+Also the routes of delijn to the map and see the result. 
+http://geoservices.informatievlaanderen.be/raadpleegdiensten/DeLijn/wms
 
