@@ -26,14 +26,29 @@ In het paneel *"browwser"* of venster *"databronnen beheren"*, zie je een oplijs
 
 ![][venster_databronnen]
 
+Lagen aanmaken
+--------------
+
+
 Lagen bewerken
 --------------
 
 
+Kaarten opslaan
+---------------
+Je kunt enkel bepaalde types van lagen bewerken zoals geopackage, shapefile of database-lagen.
+Als je lagen wilt kunnen bewerken heb kan best de werkbalken: *"Digitaliseren"* en *"Attributen"* toevoegen. 
+ALs je een laag wilt bewerken hebt moet je die selecteren in het lagen-paneel en dan op de knop bewerken klikken.
+Dan kan je bevoorbeeld een nieuwe record toevoegen via de knop +"Nieuwe Polygoon"* (of punt/lijn). 
+Je kunt tekenen door op de kaart te klikken en tekenen beeïndigen door rechts te klikken.
+Nadat je een record hebt toegevoegd, komt er een formulier om de attribuut waarden in te geven.
+Een geometrie van een object  kan je  met de "Gereedschap punten" knop. 
+Je attributen werken met de Infoknop of in de attribuuttabel.
 
-
-
+![][data_bewerken]
 
 [interface]: interface.png "De QGIS-interface"
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
 [venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
+[data_bewerken] data_bewerken.gif "Data bewerken"
+
