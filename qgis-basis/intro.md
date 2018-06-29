@@ -51,11 +51,18 @@ Je attributen werken met de Infoknop of in de attribuuttabel.
 Kaarten opslaan
 ---------------
 
+Als je een eenvoudige afbeelding (bv voor in een email of word-document) nodig hebt kan je die via de menubalk: **Project > Kaart als Afbeeldig opslaan ...**
 
+Dan krijg je een venster waarin de grootte van de output afbeeldig kan opgeven en het extend van de kaart.
+Als gewoon wilt opslaan wat je op dat moment op de kaart ziet klik je op **Kaartvenster-extent**.
+Je kunt dan opslaan naaar klembord (om te plakken in email/word) of een bestand via **Save**.
+
+![][save_map]
 
 [interface]: interface.png "De QGIS-interface"
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
 [venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
 [data_bewerken]: data_bewerken.gif "Data bewerken"
 [new_laag]: new_laag.png "Knoppen nieuwe laag maken"
-[new_laag_maken] new_laag_maken.gif "Een nieuwe laag maken"
+[new_laag_maken]: new_laag_maken.gif "Een nieuwe laag maken"
+[save_map]: save_map.png "Een kaart opslaan"
