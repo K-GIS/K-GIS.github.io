@@ -29,6 +29,11 @@ In het paneel *"browwser"* of venster *"databronnen beheren"*, zie je een oplijs
 Lagen aanmaken
 --------------
 
+De werkbalk *"databronnen beheren"* bevat knoppen om nieuwe lagen aan te maken: ![][new_laag]
+
+Je kunt nieuwe van het type: geopackage, shapefile en spatialite, er is een 4-de type de in memory "tijdelijke tekenlaag" die verdwijnt als QGIS afsluit. je kunt ook nieuwe database-lagen maken via de database interface. 
+
+![][new_laag_maken]
 
 Lagen bewerken
 --------------
@@ -52,4 +57,5 @@ Kaarten opslaan
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
 [venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
 [data_bewerken]: data_bewerken.gif "Data bewerken"
-
+[new_laag]: new_laag.png "Knoppen nieuwe laag maken"
+[new_laag_maken] new_laag_maken.gif "Een nieuwe laag maken"
