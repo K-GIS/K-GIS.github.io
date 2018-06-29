@@ -18,9 +18,22 @@ Het *'browser'*-paneel laat toe om nieuwe data aan de kaart toe te voegen.
 
 ![][interface]
 
+Lagen toevoegen
+--------------
+Die kan via het browser-paneel of via de knap *"databronnen beheren"*. ![][knop_databron]
+
+In het paneel *"browwser"* of venster *"databronnen beheren"*, zie je een oplijsting van de verschilende soorten databronnen ondersteunt door QGIS. Voor GIS-bestanden zoals geopackage en Shapefile, kan je naar de juist de locatie browseren en de het bestand toevoegen door erop te dubbelklikken of door op de *"lagen toevoegen"* knop te drukken. 
+
+![][venster_databronnen]
+
+Lagen bewerken
+--------------
 
 
 
 
 
-[interface]: img/interface.png "De QGIS-interface"
+
+[interface]: interface.png "De QGIS-interface"
+[knop_databron]: knop_databron.png "De knop databronnen beheren"
+[venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
