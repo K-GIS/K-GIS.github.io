@@ -52,6 +52,15 @@ Je attributen werken met de Infoknop of in de attribuuttabel.
 
 ![][data_bewerken]
 
+Objecten kopieren van 1 laag naar de andere
+-------------------------------------------
+Je kunt tijdens het bewerken van lagen, gegevens uit een andere laag kopieren en deze dan plakken in een een andere laag.
+Als er attributen zijn met zelfde naam en type worden die ook mee gekopieerd. 
+Je moet hiervoor eerste de laag selecteren in het lagen-paneel en dan op **CTRL-C** of op de **KOPIE-knop** op de digitaliseer-toolbalk klikken. 
+Daarna selecteer je de bewerkbare laag waarnaar je wilt kopieren en klik je op **CTRL-V** of op de **PLAK-knop** op de digitaliseer-toolbalk.
+
+#TODO: animation
+
 Kaarten opslaan
 ---------------
 
@@ -65,7 +74,7 @@ Je kunt dan opslaan naaar klembord (om te plakken in email/word) of een bestand 
 
 Complexe kaartafdrukken maken kan met de layout manager op de menubalk: **Project > Layout manager**
 
-#TODO
+#TODO: use layout-templates 
 
 [interface]: interface.png "De QGIS-interface"
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
