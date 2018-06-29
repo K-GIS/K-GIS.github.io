@@ -63,6 +63,10 @@ Je kunt dan opslaan naaar klembord (om te plakken in email/word) of een bestand 
 
 ![][save_map]
 
+Complexe kaartafdrukken maken kan met de layout manager op de menubalk: **Project > Layout manager**
+
+#TODO
+
 [interface]: interface.png "De QGIS-interface"
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
 [venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
