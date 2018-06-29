@@ -18,6 +18,10 @@ Het *'browser'*-paneel laat toe om nieuwe data aan de kaart toe te voegen.
 
 ![][interface]
 
+Naviagatie kan door op het handje aan te klikken en de kaart dan te verslepen. In en uitzoomen kan met het muiswiel of met zoom+ en zoom-  knoppen. Er zijn ook knoppen om te zomen naar kaartlaag, selectie of de hele kaart. De zoom knoppen met peiltje naar link of recht laten toe terug te keren de vorige positie. Voor de rest zijn er ook nog knoppen om je huidige locatie op te bookmarken en de kaartview te verversen.  
+
+![][zoomknoppen]
+
 Lagen toevoegen
 --------------
 Die kan via het browser-paneel of via de knap *"databronnen beheren"*. ![][knop_databron]
@@ -62,6 +66,7 @@ Je kunt dan opslaan naaar klembord (om te plakken in email/word) of een bestand 
 [interface]: interface.png "De QGIS-interface"
 [knop_databron]: knop_databron.png "De knop databronnen beheren"
 [venster_databronnen]: venster_databronnen.png "Venster databronnen beheren"
+[zoomknoppen]: zoomknoppen.png "Knoppen voor kaartnavigatie"
 [data_bewerken]: data_bewerken.gif "Data bewerken"
 [new_laag]: new_laag.png "Knoppen nieuwe laag maken"
 [new_laag_maken]: new_laag_maken.gif "Een nieuwe laag maken"
