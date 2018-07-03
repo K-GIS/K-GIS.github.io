@@ -59,7 +59,7 @@ Als er attributen zijn met zelfde naam en type worden die ook mee gekopieerd.
 Je moet hiervoor eerste de laag selecteren in het lagen-paneel en dan op **CTRL-C** of op de **KOPIE-knop** op de digitaliseer-toolbalk klikken. 
 Daarna selecteer je de bewerkbare laag waarnaar je wilt kopieren en klik je op **CTRL-V** of op de **PLAK-knop** op de digitaliseer-toolbalk.
 
-#TODO: animation
+![][copyLayer]
 
 Kaarten opslaan
 ---------------
@@ -84,3 +84,4 @@ Complexe kaartafdrukken maken kan met de layout manager op de menubalk: **Projec
 [new_laag]: new_laag.png "Knoppen nieuwe laag maken"
 [new_laag_maken]: new_laag_maken.gif "Een nieuwe laag maken"
 [save_map]: save_map.png "Een kaart opslaan"
+[copyLayer]: copyLayer.gif "Laag kopieren naar andere laag"
