@@ -2,8 +2,6 @@ site_name: KGIS
 site_url: https://kgis.be
 site_author: Kay Warrie
 site_description: Website van KGIS GIS-consulting.
-site_dir: ..\docs
-
 
 copyright: 'Copyright &copy; 2020 Kay Warrie (<em><a href="mailto:kaywarrie@gmail.com" >Contacteer mij</a></em>)<br/>Julius de Geyterstraat 142, 2610 Antwerpen'
 
@@ -30,7 +28,7 @@ theme:
   icon: 'cloud'
   feature:
     tabs: true
-  logo: 'img/Layers.png'
+  logo: 'img/layers.png'
   
 extra_templates:
     
