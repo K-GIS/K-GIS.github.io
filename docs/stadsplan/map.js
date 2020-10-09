@@ -41,27 +41,27 @@ function init() {
 		});
 
 /*basemaps*/
-    var grb_grijs = L.tileLayer( "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=grb_bsk_grijs&STYLE=&FORMAT=image/png&TILEMATRIXSET=GoogleMapsVL&TILEMATRIX={z}&TILEROW={x}&TILECOL={y}" 
-   , {
+    var grb_grijs = L.tileLayer("//tile.informatievlaanderen.be/ws/raadpleegdiensten/tms/1.0.0/grb_bsk_grijs@GoogleMapsVL/{z}/{x}/{y}.png", {
         minZoom: 6,
-        maxZoom: 20
+        maxZoom: 20,
+        tms: true
     });
 
-    var grb = L.tileLayer( "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=grb_bsk&STYLE=&FORMAT=image/png&TILEMATRIXSET=GoogleMapsVL&TILEMATRIX={z}&TILEROW={x}&TILECOL={y}" 
-    , {
+    var grb = L.tileLayer("//tile.informatievlaanderen.be/ws/raadpleegdiensten/tms/1.0.0/grb_bsk@GoogleMapsVL/{z}/{x}/{y}.png", {
         minZoom: 6,
-        maxZoom: 20
-     });
+        maxZoom: 20,
+        tms: true
+    });
 
     var osm = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {})
 	
-    var lufo  = L.tileLayer( "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&TILEMATRIXSET=GoogleMapsVL&TILEMATRIX={z}&TILEROW={x}&TILECOL={y}" 
-      , {
+    var lufo  = L.tileLayer( "//tile.informatievlaanderen.be/ws/raadpleegdiensten/tms/1.0.0/omwrgbmrvl@GoogleMapsVL/{z}/{x}/{y}.png" , {
 		minZoom: 6,
-		maxZoom: 20
+		maxZoom: 20,
+		tms: true
 	});
 
-    var antw = L.esri.tiledMapLayer("https://tiles.arcgis.com/tiles/1KSVSmnHT2Lw9ea6/arcgis/rest/services/basemap_stadsplan_v6/MapServer", {
+    var antw = L.esri.tiledMapLayer("//tiles.arcgis.com/tiles/1KSVSmnHT2Lw9ea6/arcgis/rest/services/basemap_stadsplan_v5/MapServer", {
             opacity:  0.95,
             minZoom: 7,
             maxZoom: 19,

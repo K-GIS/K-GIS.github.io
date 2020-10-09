@@ -9,7 +9,7 @@ Over mij
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  2610 Antwerpen
     **Telefoon:** 0494 47 38 00
     **Email:** kaywarrie@gmail.com
-    **Persoonlijk Website:** http://kgis.be
+    **Persoonlijk Website:** https://kgis.be
     **BTW:** BE.0552.935.137
 
 ##Wie ben ik
@@ -41,4 +41,4 @@ Opleidingen
 
 ##Projecten
 
-Een overzicht vande projecten waarop in sinds mijn Freelance carrière aan gewerkt heb: [Projecten](projects.md)
+Een overzicht van een aantal projecten waaraan ik gewerkt heb: [Projecten](projects.md)

@@ -3,13 +3,10 @@ Projecten
 
 Hieronder vind je een overzicht van sommige projecten, waaraan sinds mijn Freelance carrière gewerkt heb: 
 
-- Integratie AIS (positie Schepen) binnen Arcgis-portal voor Haven van Antwerpen: 
-Met behulp van ArcGIS geoevent server, live positie doorsturen naar Arcgis-portal. Uitvoeren configuratie, documentatie en viewer. 
-**Referentie**: Ludo Nauws, Ludo.Nauws@portofantwerp.com 
-
-- QGIS-plugin ontwikkelen voor databuild NV (https://databuild.be ):
-Investeringsbedrijf in de retail, zoekt geschikte panden voor het starten van een nieuwe winkel. QGIS-Plugin om sites te evalueren voor geschiktheid voor de inplanting van winkels aan de hand van open-data bronnen.
-**Referentie**: Martine Van Linden, Martine.van.linden@databuild.be
+- Regionaal Landschap Kempen en Maasland, project Verjonging tuinwijk waterschei
+    - Kaarten maken van de verschillende topics
+    - Data opzoeken, inwinnen
+**Referentie**: Trees Verhelle, Trees@rlkm.be 
 
 - QGIS migratie bij Vlaamse Milieumaatschappij (VMM): 
 Data, projecten en procedures converteren van Arcgis naar QGIS.
@@ -28,6 +25,10 @@ Het schrijven van de gebruikers handleiding.
 - Opleiding QGIS-advanced bij de Belgische Technologische Coöperatie 
 Focus op Raster en Vector analyse, model building en Geodatabases.
 **Referentie**: Jorieke Vincke: jorieke.vyncke@gmail.com 
+
+- Integratie AIS (positie Schepen) binnen Arcgis-portal voor Haven van Antwerpen: 
+Met behulp van ArcGIS geoevent server, live positie doorsturen naar Arcgis-portal. Uitvoeren configuratie, documentatie en viewer. 
+**Referentie**: Ludo Nauws, Ludo.Nauws@portofantwerp.com 
 
 - Geodata analyse, inventarisatie van gegevens en cartografie van Regionaal Landschap Kempen en Maasland. 
 Het opzoeken, verwerken en analyseren van verschillende geografische gegevens, voor aanvraag tot werelderfgoed. Resultaten voorstellen op kaart. 

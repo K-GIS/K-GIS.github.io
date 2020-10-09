@@ -1,9 +1,11 @@
 site_name: KGIS
-site_url: http://kgis.be
+site_url: https://kgis.be
 site_author: Kay Warrie
 site_description: Website van KGIS GIS-consulting.
+site_dir: ..\docs
 
-copyright: 'Copyright &copy; 2018 Kay Warrie (<em><a href="mailto:kaywarrie@gmail.com" >Contacteer mij</a></em>)<br/>Julius de Geyterstraat 142, 2610 Antwerpen'
+
+copyright: 'Copyright &copy; 2020 Kay Warrie (<em><a href="mailto:kaywarrie@gmail.com" >Contacteer mij</a></em>)<br/>Julius de Geyterstraat 142, 2610 Antwerpen'
 
 nav:
     - "KGIS": index.md
@@ -13,7 +15,7 @@ nav:
 use_directory_urls: false
   
 theme:
-  name: null
+  name: bootstrap4 
   favicon: 'img/favicon.ico'
   custom_dir: 'material'
   language: 'nl'
