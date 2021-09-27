@@ -1,4 +1,4 @@
-#  QGIS advanced for BTC
+#  QGIS advanced
 
 [gimmick:theme](simplex)
 
