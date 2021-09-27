@@ -1,7 +1,7 @@
 Basis gebruik QGIS-3
 ====================
 
-QGIS installeren op widows
+QGIS installeren op windows
 ---------------
  - Je kan deze installeren met deze tool: http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe 
  - Kies voor "Express Desktop Install" --> QGIS en GDAL aanvinken. --> Next --> ...
