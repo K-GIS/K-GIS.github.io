@@ -1,0 +1,4 @@
+<!DOCTYPE connections>
+<qgsWFSConnections version="1.0">
+    <wfs username="" name="WFS-BE" url="https://wfs.environnement.brussels/belb?" referer="" password=""/>
+</qgsWFSConnections>

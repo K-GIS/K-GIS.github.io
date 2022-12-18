@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Intro QGIS</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Intro QGIS</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#korte-intro-over-qgis"
+id="toc-korte-intro-over-qgis">Korte intro over QGIS</a>
+<ul>
+<li><a href="#ontdek-qgis" id="toc-ontdek-qgis">Ontdek QGIS</a>
+<ul>
+<li><a href="#de-qgis-interface" id="toc-de-qgis-interface">De QGIS
+interface</a></li>
+<li><a href="#een-qgis-project" id="toc-een-qgis-project">Een QGIS
+project</a></li>
+<li><a href="#oefeningen" id="toc-oefeningen">Oefeningen</a></li>
+<li><a href="#open-een-wms" id="toc-open-een-wms">Open een WMS</a></li>
+<li><a href="#open-de-attributen-tabel"
+id="toc-open-de-attributen-tabel">Open de attributen tabel</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#create-a-postgis-layer-from-a-excel-table"
+id="toc-create-a-postgis-layer-from-a-excel-table">Create a PostGIS
+layer from a Excel table</a>
+<ul>
+<li><a href="#voeg-de-xy-gegevens-toe-aan-qgis"
+id="toc-voeg-de-xy-gegevens-toe-aan-qgis">Voeg de XY-gegevens toe aan
+QGIS</a></li>
+<li><a href="#opslaan-als-een-postgis-laag"
+id="toc-opslaan-als-een-postgis-laag">Opslaan als een
+PostGIS-laag</a></li>
+<li><a href="#maak-een-ruimtelijke-join"
+id="toc-maak-een-ruimtelijke-join">Maak een ruimtelijke join</a>
+<ul>
+<li><a href="#maak-een-ruimtelijke-intersectie-met-de-where-clause"
+id="toc-maak-een-ruimtelijke-intersectie-met-de-where-clause">Maak een
+ruimtelijke intersectie met de WHERE clause</a></li>
+<li><a href="#maak-een-ruimtelijke-intersectie-met-join"
+id="toc-maak-een-ruimtelijke-intersectie-met-join">Maak een ruimtelijke
+intersectie met JOIN</a></li>
+<li><a href="#oefening-breid-het-snijvlak-uit-met-een-buffer"
+id="toc-oefening-breid-het-snijvlak-uit-met-een-buffer">Oefening: breid
+het snijvlak uit met een buffer</a></li>
+<li><a
+href="#oefening-filter-de-waarnemingen-op-basis-van-de-waarnemingsdatum"
+id="toc-oefening-filter-de-waarnemingen-op-basis-van-de-waarnemingsdatum">Oefening:
+Filter de waarnemingen op basis van de waarnemingsdatum</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#opendata-vrij-te-gebruiken-databronnen"
+id="toc-opendata-vrij-te-gebruiken-databronnen">Opendata: Vrij te
+gebruiken databronnen</a>
+<ul>
+<li><a href="#federale-overheid" id="toc-federale-overheid">Federale
+overheid</a>
+<ul>
+<li><a href="#geo.be-ngiign" id="toc-geo.be-ngiign">GEO.be
+(NGI/IGN)</a></li>
+<li><a href="#statbel.fgov.be-opendata-statistiek-belgië"
+id="toc-statbel.fgov.be-opendata-statistiek-belgië">Statbel.fgov.be
+opendata (Statistiek België)</a></li>
+<li><a href="#andere" id="toc-andere">Andere</a></li>
+</ul></li>
+<li><a href="#brussel" id="toc-brussel">Brussel</a></li>
+<li><a href="#andere-regios" id="toc-andere-regios">Andere
+regio’s</a></li>
+<li><a href="#wereld" id="toc-wereld">Wereld</a>
+<ul>
+<li><a href="#openstreetmap"
+id="toc-openstreetmap">Openstreetmap</a></li>
+<li><a href="#natural-earth" id="toc-natural-earth">Natural
+earth</a></li>
+</ul></li>
+<li><a href="#oefening" id="toc-oefening">Oefening</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="korte-intro-over-qgis">Korte intro over QGIS</h1>
+<h2 id="ontdek-qgis">Ontdek QGIS</h2>
+<h3 id="de-qgis-interface">De QGIS interface</h3>
+<figure>
+<img src="../img/0_intro/interface-qgis-with-info.png"
+style="width:13cm" alt="The QGIS interface" />
+<figcaption aria-hidden="true">The QGIS interface</figcaption>
+</figure>
+<p><strong>1. Menu’s</strong></p>
+<ul>
+<li>Project: je huidige project instellen, openen en opslaan</li>
+<li>Bewerken: Ongedaan maken, plakken etc.</li>
+<li>Beeld: Je kaartbeeld bewerken zoals in en uitzoomen, meten etc.</li>
+<li>Kaartlagen: toevoegen en beheren</li>
+<li>Extra: Algemene instellingen</li>
+<li>Plugin’s: extra componenten installeren</li>
+<li>Database: bevragen databases</li>
+<li>Vector, Raster, Web, Mazen en processing: analyse tools</li>
+<li>Help: Documentatie</li>
+</ul>
+<p><strong>2. Taakbalken</strong>: Hetzelfde als in de menu’s, maar dan
+in de vorm van iconen. Om erachter te komen wat een tool doet, beweegt u
+uw muis erover en leest u de tooltip. Om werkbalken toe te voegen of te
+verwijderen, klikt u met de rechtermuisknop ergens in dit gebied,
+behalve op een uitgeschakelde tool, en schakelt u de gewenste werkbalken
+in of uit.</p>
+<p><strong>3. De Databronnen beheren Taakbalk</strong>: Om eenvoudig
+lagen toe te voegen.</p>
+<p><strong>4. Panelen</strong>: - De eerste: de “Browser” waarmee u
+gemakkelijk een bestand kunt vinden dat is geopend geweest door QGIS,
+een WMS-service, … - De tweede: lijst met geladen lagen, ook soms de
+inhoudstafel genoemd. Als er meerdere lagen aanwezig zijn, kunt u hier
+de weergavevolgorde wijzigen. Om dit gebied te laten verschijnen of
+verdwijnen: Beeld &gt; Panelen &gt; Lagen - Om panelen toe te voegen,
+Beeld &gt; Panelen</p>
+<p><strong>5. Kaartgebied</strong>: Dit gebied kan worden in- of
+uitgezoomd.</p>
+<p><strong>6. Statusbalk</strong>: Hier vind je de coördinaten van het
+punt waar de muis zich bevindt, de schaal…</p>
+<h3 id="een-qgis-project">Een QGIS project</h3>
+<p>Een project is een werkruimte. Het opslaan van een project is gelijk
+aan het opslaan van de lijst met gebruikte lagen, de stijl die voor elke
+laag wordt gebruikt maar niet de gegevens!</p>
+<p>Voor een laag behoudt het project alleen het pad naar de laag en niet
+de gegevens in de laag.</p>
+<p>U kunt relatieve paden of absolute paden opgeven. Het voordeel van
+het gebruik van relatieve paden is dat u een bestand dat het project en
+zijn lagen bevat.</p>
+<h3 id="oefeningen">Oefeningen</h3>
+<h4 id="open-een-project">Open een project</h4>
+<p>Open het project in de bestanden die op de locatie zijn ontvangen
+“projects/part_1/senegal.qgz”.</p>
+<figure>
+<img src="../img/0_open_pjts/0_main_windows.png" style="width:13cm"
+alt="QGIS Project" />
+<figcaption aria-hidden="true">QGIS Project</figcaption>
+</figure>
+<p>U kunt de volgorde waarin de lagen verschijnen wijzigen door erop te
+klikken en het lager of hoger laten vallen.</p>
+<figure>
+<img src="../img/0_open_pjts/1_move_layer.png" style="width:13cm"
+alt="QGIS Project - verander de laagvolgorde" />
+<figcaption aria-hidden="true">QGIS Project - verander de
+laagvolgorde</figcaption>
+</figure>
+<p>De volgorde van de lagen is belangrijk: QGIS geeft de lagen weer van
+beneden naar boven: het tekent de laag helemaal onderaan, dan degene er
+net boven enzovoort. Als u de stedenlaag onderaan de lijst plaatst,
+wordt deze verborgen door de laag Regio’s. <img
+src="../img/0_open_pjts/2_villes_en_bas.png" style="width:13cm"
+alt="QGIS Project - volgorde van lagen gewijzigd" /></p>
+<p><img src="../img/0_open_pjts/3_checkbox.png"
+style="width:0.5cm" /></p>
+<p>Met de selectievakjes in het paneel “Lagen” kunt u een laag al dan
+niet weergeven.</p>
+<figure>
+<img src="../img/0_open_pjts/4_afficher_ou_non.png" style="width:13cm"
+alt="QGIS project - verborgen lagen" />
+<figcaption aria-hidden="true">QGIS project - verborgen
+lagen</figcaption>
+</figure>
+<p>Waarschuwing, het projectbestand dat we hebben geopend, heeft de
+weergegeven gegevens niet opgeslagen. Het registreert alleen het pad
+waar deze gegevens zich bevinden. Als we bijvoorbeeld naar de details
+van de laag LOCALITEITEN kijken, kunnen we zien dat het pad naar de
+gegevens is “/…links-to-exercises…/LOCALITY_P.gpkg”.</p>
+<figure>
+<img src="../img/0_open_pjts/5_details_couche_ville.png"
+style="width:9cm" alt="QGIS Project - laag details" />
+<figcaption aria-hidden="true">QGIS Project - laag details</figcaption>
+</figure>
+<p>We kunnen deze laag openen in een ander project: ga naar de directory
+” /…links-to-exercises… /donnees/part_1/” en klik op het bestand
+“LA_LOCALITE_P.gpkg”.</p>
+<p>We hebben een ander project dat deze gegevens weergeeft, maar in een
+andere stijl!</p>
+<figure>
+<img src="../img/0_open_pjts/6_couche_dans_autre_pjt.png"
+style="width:13cm"
+alt="QGIS project - de laag openen in een nieuw project" />
+<figcaption aria-hidden="true">QGIS project - de laag openen in een
+nieuw project</figcaption>
+</figure>
+<h4 id="open-een-vectorbestand">Open een vectorbestand</h4>
+<p>Allereerst starten we QGIS en kiezen we een leeg project. Wanneer we
+QGIS starten, biedt de software ons de mogelijkheid om recente projecten
+te openen. We kunnen ook een nieuw project kiezen door naar “Project”
+&gt; “Nieuw” te gaan.</p>
+<p>We gaan een “shapefile” openen, wat een van de meest voorkomende
+vectorformaten is.</p>
+<p>Klik in het menu “Lagen” op “Laag toevoegen” en vervolgens op
+“Vectorlaag toevoegen”.</p>
+<figure>
+<img
+src="../img/0_open_vector_layer/0a_menu-layer_add-vector-layer-zoom.png"
+style="width:13cm" alt="Vectorlaag toevoegen" />
+<figcaption aria-hidden="true">Vectorlaag toevoegen</figcaption>
+</figure>
+<p>Er verschijnt een venster. Kies de codering (over het algemeen laten
+we UTF8 standaard staan).</p>
+<figure>
+<img
+src="../img/0_open_vector_layer/1_menu-layer_add-vector-layer_window.png"
+style="width:9cm" alt="Vectorlaag toevoegen - kies een file" />
+<figcaption aria-hidden="true">Vectorlaag toevoegen - kies een
+file</figcaption>
+</figure>
+<p>Kies vervolgens de bron. In dit geval moet u het gewenste
+“.shp”-bestand selecteren. Open voor deze oefening het bestand
+“donnees/part_1/AD_2_Municipality.shp”. Deze gegevens worden gegenereerd
+door het IGN en zijn vrij toegankelijk op het Belgische federale portaal
+<a
+href="https://www.geo.be/#!/catalog/details/fb1e2993-2020-428c-9188-eb5f75e284b9"
+class="uri">https://www.geo.be/#!/catalog/details/fb1e2993-2020-428c-9188-eb5f75e284b9</a></p>
+<figure>
+<img
+src="../img/0_open_vector_layer/2_menu-layer_add-vector-layer_file-selection.png"
+style="width:9cm" alt="Vectorlaag toevoegen - selecteer een file" />
+<figcaption aria-hidden="true">Vectorlaag toevoegen - selecteer een
+file</figcaption>
+</figure>
+<p>Als alles goed is gegaan, zou de kaart van de gemeenten van België
+moeten verschijnen.</p>
+<figure>
+<img
+src="../img/0_open_vector_layer/3_menu-layer_add-vector-layer_file-resultat.png"
+style="width:13cm" alt="Vectorlaag toevoegen - gemeenten van België" />
+<figcaption aria-hidden="true">Vectorlaag toevoegen - gemeenten van
+België</figcaption>
+</figure>
+<p>Een alternatieve manier om een vectorlaag te openen is door het
+pictogram “Een vectorlaag toevoegen” in de werkbalk “Laagbeheer” te
+gebruiken.</p>
+<figure>
+<img
+src="../img/0_open_vector_layer/0b_menu-layer_add-vector-layer-zoom.png"
+style="width:9cm" alt="Vectorlaag toevoegen - via toolbalk icoon" />
+<figcaption aria-hidden="true">Vectorlaag toevoegen - via toolbalk
+icoon</figcaption>
+</figure>
+<h4 id="coordinaat-systemen">Coordinaat systemen</h4>
+<p>Wanneer een eerste laag wordt toegevoegd aan een project van QGIS,
+neemt het project automatisch het projectiesysteem van deze laag. Hier,
+in het geval van de laag gemeenten, is dit het Belgische Lambert 2008
+coördinatensysteem (EPSG:3812). U kunt deze informatie in de rechter
+benedenhoek van het project zien. Klik op deze knop <img
+src="../img/0_open_vector_layer/4_bouton_projection.png"
+style="width:1.6cm" />, je krijgt een venster om het projectiesysteem te
+veranderen.</p>
+<figure>
+<img src="../img/0_open_vector_layer/4_project_projection.png"
+style="width:9cm" alt="Project coördinatensysteem wijzigen" />
+<figcaption aria-hidden="true">Project coördinatensysteem
+wijzigen</figcaption>
+</figure>
+<p>Via dit venster kunt u andere coördinatensystemen testen. De meest
+gebruikte coördinatenstelsels in GIS zijn:</p>
+<ul>
+<li>WGS 84 (EPSG:4326): projectiesysteem met lengte- en breedtegraad in
+decimale graden. Soms “GPS-coördinaten” genoemd.</li>
+<li>WGS 84 Pseudo-Mercator (EPSG: 3857): projectiesysteem gebaseerd op
+de Mercator-projectie, met de meter als eenheid. Vaak in webkaarten
+gebruikt.</li>
+<li>In België: Belg Lambert 1972 (EPSG: 31370).</li>
+</ul>
+<p>Doe deze test: het toevoegen van de laag Belgische gemeenten in het
+project “projects/part_1/senegal.qgz” of in een nieuw leeg project
+levert niet hetzelfde op.</p>
+<p>Voer deze andere test uit: voeg de laag Belgische gemeenten toe aan
+een nieuw project nadat u het projectiebestand “AD_2_Municipality.prj”
+uit de map hebt verwijderd. Wat gebeurt er?</p>
+<h3 id="open-een-wms">Open een WMS</h3>
+<p>Zoals eerder gezien, zijn WMS-streams webservices. In plaats van alle
+gegevens te downloaden, hebben we toegang tot de gegevens op basis van
+de locatie en het zoomniveau. Hier zullen we een WMS-service openen om
+luchtfoto’s van het Waalse Gewest te bekijken, genaamd
+“orthophotoplans”. De adressen van deze WMS-diensten zijn beschikbaar op
+internet.</p>
+<figure>
+<img src="../img/1_wms_wfs/1_wms.png" style="width:13cm"
+alt="WMS laag toevoegen" />
+<figcaption aria-hidden="true">WMS laag toevoegen</figcaption>
+</figure>
+<figure>
+<img src="../img/1_wms_wfs/1_wms_alt.png" style="width:13cm"
+alt="WMS laag toevoegen - toolbalk icoon" />
+<figcaption aria-hidden="true">WMS laag toevoegen - toolbalk
+icoon</figcaption>
+</figure>
+<p>Klik in het venster dat verschijnt op “Laden” om het bestand van de
+verbinding te laden dat zich in “data/part_1/WMS-SPW-ortho2018.xml”
+bevindt.</p>
+<figure>
+<img src="../img/1_wms_wfs/1_wms_b1_load.png" style="width:9cm"
+alt="WMS laag toevoegen" />
+<figcaption aria-hidden="true">WMS laag toevoegen</figcaption>
+</figure>
+<p>Tijdens het laden verschijnen gegevens in het vervolgkeuzemenu. Klik
+op “verbinden” om de lagen weer te geven die door de service worden
+geleverd.</p>
+<figure>
+<img src="../img/1_wms_wfs/1_wms_b2_connect.png" style="width:9cm"
+alt="WMS laag toevoegen" />
+<figcaption aria-hidden="true">WMS laag toevoegen</figcaption>
+</figure>
+<p>De lagen verschijnen in het witte gebied. Klik op “toevoegen” om de
+geselecteerde lagen aan het project toe te voegen.</p>
+<figure>
+<img src="../img/1_wms_wfs/1_wms_b3_add.png" style="width:9cm"
+alt="WMS laag toevoegen" />
+<figcaption aria-hidden="true">WMS laag toevoegen</figcaption>
+</figure>
+<p>Je zou dit als resultaat moeten krijgen:</p>
+<figure>
+<img src="../img/1_wms_wfs/1_wms_ortho.png" style="width:13cm"
+alt="WMS laag toevoegen - luchtfoto’s" />
+<figcaption aria-hidden="true">WMS laag toevoegen -
+luchtfoto’s</figcaption>
+</figure>
+<h4 id="open-een-wfs">Open een WFS</h4>
+<p>Zelfde procedure als voor het WMS. Laad het bestand
+“data/part_1/WFS-BrusselsEnvironment.xml”.</p>
+<figure>
+<img src="../img/1_wms_wfs/3_wfs.png" style="width:13cm"
+alt="Voeg een WFS-laag toe" />
+<figcaption aria-hidden="true">Voeg een WFS-laag toe</figcaption>
+</figure>
+<figure>
+<img src="../img/1_wms_wfs/4_wfs_alt.png" style="width:13cm"
+alt="Een WFS-laag toevoegen - werkbalkpictogram" />
+<figcaption aria-hidden="true">Een WFS-laag toevoegen -
+werkbalkpictogram</figcaption>
+</figure>
+<p>Neem de tijd om de lagen in deze WFS-service te verkennen en let op
+het verschil met de WMS-service.</p>
+<h4 id="open-xyz-tiles">Open XYZ-tiles</h4>
+<p>Het is ook mogelijk om “getegelde” gegevens toe te voegen die
+beschikbaar zijn op het web. Een gebruikelijke praktijk is om een
+OpenStreetMap of een achtergrond van satellietbeelden toe te voegen aan
+uw projecten van QGIS om uw weg in de ruimte te vinden.</p>
+<figure>
+<img src="../img/1_wms_wfs/5_xyz_layers.png" style="width:7cm"
+alt="Add a XYZ layer" />
+<figcaption aria-hidden="true">Add a XYZ layer</figcaption>
+</figure>
+<p>Het adres van de OpenStreetMap-server
+is:<code>https://tile.openstreetmap.org/{z}/{x}/{y}.png</code></p>
+<h3 id="open-de-attributen-tabel">Open de attributen tabel</h3>
+<p>Open een nieuw QGIS-project. Voeg de vectorlaag
+“/donnees/part_1/AD_2_Municipality.shp” toe</p>
+<p>Klik in het menu “Laag” op “Attributentabel openen”.</p>
+<figure>
+<img src="../img/2_attribute_table/0a__find_in_menu.png"
+style="width:13cm" alt="Het lezen van de attributentabel" />
+<figcaption aria-hidden="true">Het lezen van de
+attributentabel</figcaption>
+</figure>
+<p>Een andere manier om er toegang toe te krijgen: klik met de
+rechtermuisknop op de laagnaam in het lagenmenu en de laagnaam in het
+lagenmenu en klik op “Open attributentabel”.</p>
+<figure>
+<img src="../img/2_attribute_table/0b__find_in_menu.png"
+style="width:13cm" alt="Lees attributentabel" />
+<figcaption aria-hidden="true">Lees attributentabel</figcaption>
+</figure>
+<p>En de tafel verschijnt.</p>
+<figure>
+<img src="../img/2_attribute_table/1__table.png" data-breedte="9cm"
+alt="Attributentabel" />
+<figcaption aria-hidden="true">Attributentabel</figcaption>
+</figure>
+<h4 id="selecteer-elementen-met-de-muis">Selecteer elementen met de
+muis</h4>
+<p>Klik in het menu op de knop.</p>
+<figure>
+<img src="../img/3_selection_by_mouse/0_bouton.png"
+alt="Selectieknop" />
+<figcaption aria-hidden="true">Selectieknop</figcaption>
+</figure>
+<p>U kunt een of meer elementen op de kaart selecteren. Zij zijn blauw
+gemarkeerd in de attributentabel.</p>
+<figure>
+<img src="../img/3_selection_by_mouse/1_selection.png"
+style="width:13cm" alt="Functieselectie in de attributentabel" />
+<figcaption aria-hidden="true">Functieselectie in de
+attributentabel</figcaption>
+</figure>
+<p>Onderaan het attributentabelvenster staan opties voor weergaveopties.
+Test ze!</p>
+<figure>
+<img src="../img/3_selection_by_mouse/2_display_options.png"
+style="width:13cm" alt="Items selecteren in de attributentabel" />
+<figcaption aria-hidden="true">Items selecteren in de
+attributentabel</figcaption>
+</figure>
+<p>Test de andere selectiemodi door op de pijl naar beneden van de knop
+te klikken:</p>
+<figure>
+<img src="../img/3_selection_by_mouse/0_bouton.png"
+alt="Selectieknop" />
+<figcaption aria-hidden="true">Selectieknop</figcaption>
+</figure>
+<h1 id="create-a-postgis-layer-from-a-excel-table">Create a PostGIS
+layer from a Excel table</h1>
+<p>In deze sectie zullen we een PostGIS-laag maken van een tabel met
+puntwaarnemingen en deze opslaan als een Postgis-laag.</p>
+<h2 id="voeg-de-xy-gegevens-toe-aan-qgis">Voeg de XY-gegevens toe aan
+QGIS</h2>
+<p>We hebben een Excel-bestand met puntwaarnemingen boven Brussel, met
+de coördinaten van de waarnemingen in twee kolommen (bv. X en Y, of
+lengte- en breedtegraad) en we willen dit toevoegen aan onze
+PostGIS-database.</p>
+<p>Dit wordt meestal gedaan door de laagactie “Voeg gescheiden tekst
+toe” in het lagenmenu te gebruiken, waarmee de tabel met waarnemingen
+wordt toegevoegd en de coördinatenkolommen worden omgezet in punten op
+de kaart. Deze manipulatie vereist dat we eerst het Excel-bestand
+converteren naar een “CSV”-bestand, wat kan worden gedaan in Excel of
+LibreOffice.</p>
+<p>Open het dialoogvenster <em>teken gescheiden tekstlaag toevoegen</em>
+(Laag &gt; Laag toevoegen &gt; teken gescheiden tekstlaag …) en blader
+naar het csv-bestand. De tool detecteert automatisch de
+coördinatenkolommen op basis van hun namen (X, Y), maar soms moet u de
+juiste kolommen voor de coördinaten aangeven. Het is ook belangrijk om
+een coördinatensysteem (Geometry CRS) te kiezen dat correct is met
+betrekking tot deze coördinaten!</p>
+<figure>
+<img src="../img/image.png"
+alt="Dialoogvenster met teken-gescheiden tekst toevoegen" />
+<figcaption aria-hidden="true">Dialoogvenster met teken-gescheiden tekst
+toevoegen</figcaption>
+</figure>
+<p>Opmerking: we kunnen het Excel-bestand in feite direct in QGIS laden
+en het omzetten in punten zonder te converteren naar het CSV-formaat,
+maar dit kan leiden tot een laag zonder kolomnamen, dus het is niet de
+voorkeursoptie. Maar u kunt proberen: sleep het Excel-bestand
+rechtstreeks naar de lagenbrowser van QGIS en gebruik vervolgens de tool
+“Create points layer from table” die beschikbaar is in de “Processing
+toolbox”.</p>
+<p>Na gebruik van de tool wordt de puntenlaag als volgt op de kaart
+weergegeven:</p>
+<figure>
+<img src="../img/image-1.png"
+alt="Puntlaag weergegeven in het kaartpaneel" />
+<figcaption aria-hidden="true">Puntlaag weergegeven in het
+kaartpaneel</figcaption>
+</figure>
+<h2 id="opslaan-als-een-postgis-laag">Opslaan als een PostGIS-laag</h2>
+<p>Het opslaan van deze laag in een PostGIS-database is triviaal als u
+eenmaal bent verbonden met een PostgreSQL-database met PostGIS
+ingeschakeld.</p>
+<p>Open de DB-manager (Database &gt; DB-manager). Blader links naar de
+database en klik op het derde icoon “Laag/Bestand importeren”. U kunt de
+laag selecteren in het eerste veld “Invoer”, en vervolgens kiezen in
+welke tabel u de database wilt opslaan.</p>
+<p>Belangrijke notitie! Standaard zal QGIS voorstellen om de gegevens op
+te slaan in een nieuwe tabel met dezelfde naam als de laag, maar houd er
+rekening mee dat u verschillende problemen zult vermijden door een naam
+te kiezen zonder speciale tekens (spaties, “-”, “&amp;”, enz. ) en
+zonder hoofdletters! Hoewel PostgreSQL-tabellen een gecompliceerde naam
+<em>kunnen</em> hebben en gebruikers daarmee kunnen omgaan (door de
+tabelnamen tussen ““) aan te halen, is het uw verantwoordelijkheid als
+GIS-beheerder om deze problemen te vermijden door eenvoudige tabelnamen
+te geven!</p>
+<p>Tip: U kunt beter het vakje “Maak een ruimtelijke index aan”
+aanvinken: hoewel het wat meer tijd zal kosten om de PostGIS-tabel te
+maken, zal een index de prestatie (d.w.z. de snelheid) van het lezen van
+de gegevens voor later gebruik verhogen.</p>
+<figure>
+<img src="../img/image-3.png"
+alt="Importeer een vectorlaag naar de database" />
+<figcaption aria-hidden="true">Importeer een vectorlaag naar de
+database</figcaption>
+</figure>
+<h2 id="maak-een-ruimtelijke-join">Maak een ruimtelijke join</h2>
+<p>Nu de waarnemingen zijn geïmporteerd in een PostGIS-tabel, kunnen we
+beginnen met het maken van enkele ruimtelijke query’s!</p>
+<p>Maak een polygoon in een interessegebied. Hier heb ik een polygoon
+getekend rond het centraal station in Brussel. Ik heb het geïmporteerd
+in de PostGIS-tabel zoals eerder gezien. Om een polygoon te maken, moet
+u een laag maken (Laag &gt; Laag maken) en deze opslaan op uw computer,
+of u kunt de plug-in QuickDraw QGIS gebruiken, wat erg handig is om snel
+een nieuwe laag te maken.</p>
+<p>Zoals elke tabel kunnen we een query op de tabel maken om de gegevens
+te filteren. Met behulp van PostGIS-functionaliteiten kunnen we enkele
+ruimtelijke query’s maken.</p>
+<figure>
+<img src="../img/image-4.png"
+alt="Ruimtelijke query tussen 2 tabellen" />
+<figcaption aria-hidden="true">Ruimtelijke query tussen 2
+tabellen</figcaption>
+</figure>
+<p>Om een ruimtelijke query uit te voeren, opent u de DB-manager
+(Database &gt; DB-manager), bladert u naar uw PostGIS-database en klikt
+u op het tweede pictogram om de querybuilder te openen. In de
+querybuilder kunt u enkele query’s op uw database typen. In deze
+oefening willen we alle punten filteren die vallen in de polygoon die we
+hebben getekend.w.</p>
+<h3 id="maak-een-ruimtelijke-intersectie-met-de-where-clause">Maak een
+ruimtelijke intersectie met de WHERE clause</h3>
+<p>Er zijn eigenlijk 2 manieren om een ruimtelijke intersectie te maken:
+(1) met behulp van de WHERE-component en (2) met behulp van de
+JOIN-instructie. Dit zijn de SQL-instructies die moeten worden
+geschreven met de WHERE-component. Wij gebruiken de <a
+href="https://postgis.net/docs/ST_Intersects.html">PostGIS functie
+“ST_Intersects”</a>: this function returns “true” where there is a
+spatial intersection between two layers. There are other PostGIS
+functions for doing spatial intersection, such as ST_Within,
+ST_Contains, ST_Disjoint, … with some subtleties in their use.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> observations.<span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> observations, gare_centrale</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> st_intersects(gare_centrale.geom, observations.geom)</span></code></pre></div>
+<p>U kunt het resultaat van de laden zoeken in het kaartpaneel van QGIS
+door op “Laden” te klikken.</p>
+<h3 id="maak-een-ruimtelijke-intersectie-met-join">Maak een ruimtelijke
+intersectie met JOIN</h3>
+<p>En hier de instructie met behulp van de (INNER) JOIN-instructie.
+Beide vragen worden opgenomen in dezelfde uitvoer.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> observations.<span class="op">*</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> observations</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> gare_centrale <span class="kw">ON</span> st_intersects(gare_centrale.geom, observations.geom);</span></code></pre></div>
+<p>Om samen te vatten, je hebt geleerd hoe je een eenvoudige ruimtelijke
+kruising kunt maken met een of andere PostGIS-functie!</p>
+<p>Eigenlijk zou dit gedaan kunnen worden met het gereedschap QGIS
+(selecteren op locatie), maar het doen met de DB-manager heeft enkele
+voordelen:</p>
+<ul>
+<li>u kunt uw zoekopdracht opslaan als een SQL-bestand om een
+verzameling SQL-recepten te maken die u kunt gebruiken en delen met
+collega’s.</li>
+<li>wat nog belangrijker is, u kunt het resultaat van de zoekopdracht
+opslaan in een nieuwe weergave. Een weergave is als een tabel voor de
+eindgebruikers, behalve dat de gegevens niet worden gedupliceerd en mee
+evolueren met de originele tabel.</li>
+</ul>
+<h3 id="oefening-breid-het-snijvlak-uit-met-een-buffer">Oefening: breid
+het snijvlak uit met een buffer</h3>
+<p>Stel nu dat we de analyse een beetje willen uitbreiden door te kijken
+naar alle waarnemingen die zich binnen een bufferzone van 100 m rond de
+polygoon van het centraal station bevinden.</p>
+<p>We kunnen een nieuwe polygoon opnieuw tekenen, importeren in PostGIS
+en de manipulatie opnieuw uitvoeren, maar er is een veel eenvoudige
+manier: we kunnen de query wijzigen door een buffer toe te voegen rond
+de “gare_centrale” geometrie.</p>
+<!-- SELECT observations.*
+FROM observations, gare_centrale
+WHERE st_intersects(ST_Buffer(gare_centrale.geom, 100), observations.geom) -->
+<h3
+id="oefening-filter-de-waarnemingen-op-basis-van-de-waarnemingsdatum">Oefening:
+Filter de waarnemingen op basis van de waarnemingsdatum</h3>
+<p>We willen de waarnemingen filteren op datum van waarnemingen,
+bijvoorbeeld enkel waarnemingen na 01/01/2018 behouden.</p>
+<!-- SELECT observations.*
+FROM observations, gare_centrale
+WHERE
+  st_intersects(gare_centrale.geom, observations.geom)
+  AND observations."creationDate" > '2018-01-01'; -->
+<h1 id="opendata-vrij-te-gebruiken-databronnen">Opendata: Vrij te
+gebruiken databronnen</h1>
+<p>Veel overheidsinstanties bieden een opendata-site aan waar je hun
+gratis datasets kunt downloaden.</p>
+<p>Sommige voorzien services en andere bestanden.</p>
+<h2 id="federale-overheid">Federale overheid</h2>
+<h3 id="geo.be-ngiign"><a href="https://www.geo.be/">GEO.be</a>
+(NGI/IGN)</h3>
+<figure>
+<img src="../img/4_opendata/geobe.png" alt="GEO.be" />
+<figcaption aria-hidden="true">GEO.be</figcaption>
+</figure>
+<p>Interessante datasets:</p>
+<ul>
+<li>Alle Belgische adressen: <a
+href="https://www.geo.be/catalog/details/ca0fd5c0-8146-11e9-9012-482ae30f98d9?l=en">BestAdd</a></li>
+<li>Alle administratieve afdelingen van België (gewest, provincie,
+gemeente)<a
+href="https://www.geo.be/catalog/details/63b98ade-71dc-11eb-8bf5-3448ed25ad7c?l=en">Administrative
+eenheden</a></li>
+<li>Postcode gebieden: <a
+href="https://www.geo.be/catalog/details/9738c7c0-5255-11ea-8895-34e12d0f0423?l=en">Post
+Districten</a></li>
+<li>Statistische afdelingen van België: <a
+href="https://www.geo.be/catalog/details/d5f503fe-c228-48a6-9f00-927c95bbd450?l=en">Statistische
+sectoren</a>
+<ul>
+<li><blockquote>
+<p>Veel gebruikt in statistische rapportage</p>
+</blockquote></li>
+</ul></li>
+<li>NGI WMTS-basemap: <a
+href="https://www.geo.be/catalog/details/0fdbe090-bd35-41b1-8835-823eb769eaee?l=en">Cartoweb</a>
+<ul>
+<li><blockquote>
+<p>NGI levert geen gratis basis vectordata.</p>
+</blockquote></li>
+</ul></li>
+<li>Land Parcels: <a
+href="https://www.geo.be/catalog/details/65132770-71dc-11eb-b166-3448ed25ad7c?l=en">Land
+register plan</a>
+<ul>
+<li><blockquote>
+<p>eigendomsinformatie (legger) niet inbegrepen</p>
+</blockquote></li>
+</ul></li>
+</ul>
+<h3 id="statbel.fgov.be-opendata-statistiek-belgië"><a
+href="https://statbel.fgov.be/en/open-data">Statbel.fgov.be opendata</a>
+(Statistiek België)</h3>
+<figure>
+<img src="../img/4_opendata/statbel.png" alt="Statbel.fgov.be" />
+<figcaption aria-hidden="true">Statbel.fgov.be</figcaption>
+</figure>
+<p>Diverse statistieken van België, zoals fiscale inkomens, bevolking,
+…</p>
+<p>Meestal platte tabellen (.csv) of excel-bestanden, meestal
+gerapporteerd op gemeentelijk of statistisch sectorniveau.</p>
+<p>Met behulp van GIS-data van NGI/IGN kunt u deze tabellen samenvoegen
+om kaarten te maken met deze datasets.</p>
+<h3 id="andere">Andere</h3>
+<ul>
+<li>MIVB: <a href="https://opendata.stib-mivb.be/store/data"
+class="uri">https://opendata.stib-mivb.be/store/data</a></li>
+<li>De lijn: <a href="https://data.delijn.be"
+class="uri">https://data.delijn.be</a></li>
+<li>Infrabel (treinen): <a href="https://opendata.infrabel.be"
+class="uri">https://opendata.infrabel.be</a></li>
+<li>Fluvius (Gas en elektriciteit): <a
+href="https://opendata.fluvius.be"
+class="uri">https://opendata.fluvius.be</a></li>
+<li>Bosa: <a href="https://data.gov.be"
+class="uri">https://data.gov.be</a></li>
+</ul>
+<h2 id="brussel">Brussel</h2>
+<figure>
+<img src="../img/4_opendata/datastore.png" alt="datastore.brussels" />
+<figcaption aria-hidden="true">datastore.brussels</figcaption>
+</figure>
+<ul>
+<li>Geoportaal van het Brussels Gewest <a
+href="http://Geo.brussels">Geo.brussels</a></li>
+<li>Brusselse open data site <a
+href="https://datastore.brussels">datastore.brussels</a>
+<ul>
+<li><blockquote>
+<p>handig om te delen met externe contacten</p>
+</blockquote></li>
+</ul></li>
+</ul>
+<h2 id="andere-regios">Andere regio’s</h2>
+<ul>
+<li>Vlaanderen:
+<ul>
+<li><a href="https://www.geopunt.be/catalogus">geopunt.be</a></li>
+<li><a
+href="https://provincies.incijfers.be/">provincies.incijfers.be</a></li>
+</ul></li>
+<li>Walonië:
+<ul>
+<li><a
+href="https://geoportail.wallonie.be/">geoportail.wallonie.be</a></li>
+</ul></li>
+</ul>
+<h2 id="wereld">Wereld</h2>
+<h3 id="openstreetmap">Openstreetmap</h3>
+<p>Openstreetmap is een gratis basiskaart van de wereld, gemaakt door
+hobbyisten. QGIS bevat deze kaart al onder <code>XYZ-tiles</code>. Dit
+zijn alleen de gerenderde tegels, niet de brongegevens.</p>
+<p>Het opvragen van de brongegevens openstreetmap is behoorlijk
+ingewikkeld. Het Duitse bedrijf geofabrik levert donwloads voor elk
+land, in de oorspronkelijke openstreetmap-indeling (.osm.pbf) en in
+shapefile-indeling, handig in QGIS als je basis gegevens van andere
+landen nodig hebt.</p>
+<p>De Europese downloads vind je hier: <a
+href="https://download.geofabrik.de/europe.html"
+class="uri">https://download.geofabrik.de/europe.html</a></p>
+<h3 id="natural-earth">Natural earth</h3>
+<p>Natural earth bevat basis als je kaarten wilt maken op wereldschaal.
+Het bevat onder meer administratieve grenzen, grotere waterlichamen
+etc.</p>
+<p>De download vind je hier: <a
+href="https://www.naturalearthdata.com/downloads/"
+class="uri">https://www.naturalearthdata.com/downloads/</a></p>
+<h2 id="oefening">Oefening</h2>
+<ul>
+<li>Op de site van Statbel <a
+href="https://statbel.fgov.be/nl/open-data/"
+class="uri">https://statbel.fgov.be/nl/open-data/</a>
+<ul>
+<li>Zoek en download de statistische sectoren van België als
+<em>shapefile (.shp)</em></li>
+<li>Pak het zipbestand uit en voeg het toe aan qgis.</li>
+<li>Zoek “Bevolking per statistische sector” en download het als een
+tekstbestand.</li>
+<li>Voeg het toe aan qgis met behulp van het hulpmiddel voor gescheiden
+tekst.</li>
+<li>Verbind beide gegevensbronnen met behulp van:
+<ol type="1">
+<li>klik met de rechtermuisknop op de laag met statistische
+sectoren</li>
+<li>Kies “Eigenschappen”</li>
+<li>Kies “Joins” en klik vervolgens op het plusteken</li>
+<li>Verbind de sectoren op veld “CD_SECTOR” Bevolking op veld
+“CD_SECTOR”</li>
+<li>Kleur de polygonen van de sectoren in met het veld TOTAL (=aantal
+mensen) van bevolking</li>
+</ol></li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/4_opendata/joins.png" alt="Joins in QGIS" />
+<figcaption aria-hidden="true">Joins in QGIS</figcaption>
+</figure>
+</body>
+</html>

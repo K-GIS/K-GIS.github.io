@@ -1,0 +1,4 @@
+<!DOCTYPE connections>
+<qgsWMSConnections version="1.0">
+    <wms ignoreGetMapURI="false" dpiMode="7" username="" name="SPWOrtho2018" url="http://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2018/MapServer/WMSServer" ignoreAxisOrientation="false" ignoreGetFeatureInfoURI="false" smoothPixmapTransform="false" referer="" invertAxisOrientation="false" password=""/>
+</qgsWMSConnections>
