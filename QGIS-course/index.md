@@ -3,9 +3,8 @@ QGIS advanced course
 
 **Remark:** for the introduction course see here:
 
-- English: [Introduction to QGIS ](intro/postgis-qgis-training.en.html) ([pdf](intro/postgis-qgis-training.en.pdf))
-- Nederlands: [Introductie tot QGIS ](intro/postgis-qgis-training.nl.html) ([pdf](intro/postgis-qgis-training.nl.pdf))
-
+- English: [Introduction to QGIS ](intro/#!index.md#Nederlands) ([pdf](intro/postgis-qgis-training.en.pdf))
+- Nederlands: [Introductie tot QGIS ](intro/#!index.md#English) ([pdf](intro/postgis-qgis-training.nl.pdf))
 
 
 Contents

@@ -1,0 +1,7 @@
+{
+	"title": "Intro to QGIS", 
+    "useSideMenu": true,
+    "lineBreaks": "gfm",
+    "additionalFooterText": "Auteurs: Kay Warrie en Champs-libre",
+    "anchorCharacter": "#"
+}
