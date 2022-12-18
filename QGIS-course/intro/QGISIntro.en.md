@@ -1,10 +1,7 @@
-Small hands-on on QGIS
-=====================
+Intro to QGIS
+==============
 
-## Discover QGIS
-
-
-### QGIS interface
+## QGIS interface
 
 ![The QGIS interface](../img/0_intro/interface-qgis-with-info.png)
 
@@ -35,7 +32,7 @@ Small hands-on on QGIS
 **6. Status Bar**. Here you can find the coordinates of the point where the mouse is located, the scale...
 
 
-### A QGIS project
+## A QGIS project
 
 A project is a workspace. Saving a project is equivalent to saving the list of layers used, the style used for each layer
 but not the data!
@@ -46,9 +43,7 @@ You can specify relative paths or absolute paths. The advantage of using relativ
 file that contains the project and its layers.
 
 
-### Exercises
-
-### Open a project
+## Exercise: Open a project
 
 
 Open the project in the files received at the location "projects/part_1/senegal.qgz".
@@ -80,7 +75,7 @@ We have another project that displays this data but in a different style!
 
 ![QGIS project - opening the layer in a new project](../img/0_open_pjts/6_couche_dans_autre_pjt.png)
 
-### Open a vector file
+##  Exercise: Open a vector file
 
 First of all, we launch QGIS and choose an empty project. When we start QGIS, the software offers us to open recent projects. We can also choose a new project by going to "Project" > "New".
 
@@ -108,8 +103,7 @@ An alternative way to open a vector layer is to use the "Add a vector layer" ico
 ![Add a vector layer - via toolbar icon](../img/0_open_vector_layer/0b_menu-layer_add-vector-layer-zoom.png)
 
 
-
-### Coordinate system
+## Exercise: Coordinate system
 
 When a first layer is added to a QGIS project, the project automatically takes the projection system
 of this layer. Here, in the case of the municipalities layer, this is the Belgian Lambert 2008 coordinate system (EPSG:3812). You can see this information in the lower right corner of the project. Click on this button ![](../img/0_open_vector_layer/4_bouton_projection.png), you will get a window to change the projection system.
@@ -126,7 +120,7 @@ Do this test: adding the Belgian municipalities layer in the project "projects/p
 
 Do this other test: add the Belgium municipalities layer in a new project having deleted the projection file "AD_2_Municipality.prj" from its directory. What happens?
 
-### Open a WMS
+##  Exercise: Open a WMS
 
 As seen before, WMS streams are web services. Rather than downloading the whole data, we will access the data according to the location and the zoom level. Here, we will open a WMS service to view aerial images of the Walloon region, called "orthophotoplans". The addresses of these WMS services are available on the Internet.
 
@@ -150,8 +144,12 @@ You should get this as a result:
 
 ![Adding a WMS layer - Orthophotoplans](../img/1_wms_wfs/1_wms_ortho.png)
 
+Now try again with an url from Geobrussels:
 
-### Open a WFS stream
+`https://geoservices-urbis.irisnet.be/geowebcache/service/wmts?layer=urbisNL&request=getcapabilities`
+
+
+##  Exercise: Open a WFS stream
 
 Same procedure as for the WMS. Load the file "data/part_1/WFS-BrusselsEnvironment.xml".
 
@@ -161,7 +159,8 @@ Same procedure as for the WMS. Load the file "data/part_1/WFS-BrusselsEnvironmen
 
 Take some time to explore the layers in this WFS service and note the difference with the WMS service.
 
-### Open XYZ tiles
+
+##  Exercise: Open XYZ tiles
 
 It is also possible to add "tiled" data available on the Web.
 A common practice is to add an OpenStreetMap or a satellite imagery background to your QGIS projects in order to find your way in space.
@@ -172,7 +171,8 @@ These services are available in the "Browser" tab:
 
 The OpenStreetMap server address is: `https://tile.openstreetmap.org/{z}/{x}/{y}.png`
 
-### Open the attribute table
+
+##  Exercise: Open the attribute table
 
 Open a new QGIS project. Add the vector layer "/donnees/part_1/AD_2_Municipality.shp"
 
@@ -190,7 +190,7 @@ And the table appears.
 ![Attribute table](../img/2_attribute_table/1__table.png)
 
 
-### Selecting elements with the mouse
+##  Exercise: Selecting elements with the mouse
 
 In the menu, click on the button.
 

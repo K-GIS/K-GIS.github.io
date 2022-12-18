@@ -3,6 +3,11 @@ QGIS: Introductie cursus / Intro course
 
 ![QGIS](../img/qgisbanner.png)
 
+
+## Practice data
+
+[download here](../data/qgis.zip)
+
 ## Nederlands
 
 * [Introductie tot QGIS](QGISIntro.nl.md)
@@ -17,8 +22,8 @@ QGIS: Introductie cursus / Intro course
 
 ## PDF
 
-* Nederlands: [Introductie tot QGIS (pdf)](intro/postgis-qgis-training.nl.pdf)
-* English: [Introduction to QGIS (pdf)](intro/postgis-qgis-training.en.pdf)
+* Nederlands: [Introductie tot QGIS (pdf)](postgis-qgis-training.nl.pdf)
+* English: [Introduction to QGIS (pdf)](postgis-qgis-training.en.pdf)
 
 ## Bronnen / sources
 

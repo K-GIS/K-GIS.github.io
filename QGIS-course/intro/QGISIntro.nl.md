@@ -1,8 +1,6 @@
 Korte intro over QGIS
 =====================
 
-## Ontdek QGIS
-
 ## De QGIS interface
 
 ![The QGIS interface](../img/0_intro/interface-qgis-with-info.png)
@@ -34,7 +32,7 @@ Dit gebied kan worden in- of uitgezoomd.
 **6. Statusbalk**:
 Hier vind je de coördinaten van het punt waar de muis zich bevindt, de schaal...
 
-### Een QGIS project
+## Een QGIS project
 
 Een project is een werkruimte. Het opslaan van een project is gelijk aan het opslaan van de lijst met gebruikte lagen, de stijl die voor elke laag wordt gebruikt maar niet de gegevens!
 
@@ -42,9 +40,7 @@ Voor een laag behoudt het project alleen het pad naar de laag en niet de gegeven
 
 U kunt relatieve paden of absolute paden opgeven. Het voordeel van het gebruik van relatieve paden is dat u een bestand dat het project en zijn lagen bevat.
 
-## Oefeningen
-
-### Open een project
+## Oefening: Open een project
 
 Open het project in de bestanden die op de locatie zijn ontvangen <a href="projects/senegal.qgz" download>"projects/senegal.qgz"</a>.
 
@@ -56,11 +52,10 @@ en het lager of hoger laten vallen.
 ![QGIS Project - verander de laagvolgorde](../img/0_open_pjts/1_move_layer.png)
 
 De volgorde van de lagen is belangrijk: QGIS geeft de lagen weer van beneden naar boven: het tekent de laag helemaal onderaan, dan degene er net boven enzovoort. Als u de stedenlaag onderaan de lijst plaatst, wordt deze verborgen door de laag Regio's.
+
 ![QGIS Project - volgorde van lagen gewijzigd](../img/0_open_pjts/2_villes_en_bas.png)
 
-![](../img/0_open_pjts/3_checkbox.png)
-
-Met de selectievakjes in het paneel "Lagen" kunt u een laag al dan niet weergeven.
+Met de selectievakjes ![](../img/0_open_pjts/3_checkbox.png) in het paneel "Lagen" kunt u een laag al dan niet weergeven.
 
 ![QGIS project - verborgen lagen](../img/0_open_pjts/4_afficher_ou_non.png)
 
@@ -74,7 +69,7 @@ We hebben een ander project dat deze gegevens weergeeft, maar in een andere stij
 
 ![QGIS project - de laag openen in een nieuw project](../img/0_open_pjts/6_couche_dans_autre_pjt.png)
 
-### Open een vectorbestand
+## Oefening: Open een vectorbestand
 
 Allereerst starten we QGIS en kiezen we een leeg project. Wanneer we QGIS starten, biedt de software ons de mogelijkheid om recente projecten te openen. We kunnen ook een nieuw project kiezen door naar "Project" > "Nieuw" te gaan.
 
@@ -103,7 +98,7 @@ Een alternatieve manier om een vectorlaag te openen is door het pictogram "Een v
 ## Coördinaat systemen
 
 Wanneer een eerste laag wordt toegevoegd aan een project van QGIS, neemt het project automatisch het projectiesysteem
-van deze laag. Hier, in het geval van de laag gemeenten, is dit het Belgische Lambert 2008 coördinatensysteem (EPSG:3812). U kunt deze informatie in de rechter benedenhoek van het project zien. Klik op deze knop ![](../img/0_open_vector_layer/4_bouton_projection.png), je krijgt een venster om het projectiesysteem te veranderen.
+van deze laag. Hier, in het geval van de laag gemeenten, is dit het Belgische Lambert 2008 coördinatensysteem (EPSG:3812). U kunt deze informatie in de rechter benedenhoek van het project zien. Klik op deze knop ![](../img/0_open_vector_layer/4_bouton_projection.png) , je krijgt een venster om het projectiesysteem te veranderen.
 
 ![Project coördinatensysteem wijzigen](../img/0_open_vector_layer/4_project_projection.png)
 
@@ -111,14 +106,14 @@ Via dit venster kunt u andere coördinatensystemen testen. De meest gebruikte co
 
 - WGS 84 (EPSG:4326): projectiesysteem met lengte- en breedtegraad in decimale graden. Soms "GPS-coördinaten" genoemd.
 - WGS 84 Pseudo-Mercator (EPSG: 3857): projectiesysteem gebaseerd op de Mercator-projectie, met de meter als eenheid. Vaak in webkaarten gebruikt.
-- In België: Belg Lambert 1972 (EPSG: 31370).
+- In België: Belgische Lambert 1972 (EPSG: 31370).
   - *Let op* : Het NGI gebruikt soms Lambert 2008, die Lambert 1972 zou moeten vervangen 
 
-Doe deze test: het toevoegen van de laag Belgische gemeenten in het project "projects/part_1/senegal.qgz" of in een nieuw leeg project levert niet hetzelfde op.
+Doe deze test: het toevoegen van de laag Belgische gemeenten in het project <a href="projects/senegal.qgz" download>"projects/senegal.qgz"</a> of in een nieuw leeg project levert niet hetzelfde op.
 
 Voer deze andere test uit: voeg de laag Belgische gemeenten toe aan een nieuw project nadat u het projectiebestand "AD_2_Municipality.prj" uit de map hebt verwijderd. Wat gebeurt er?
 
-### Open een WMS
+## Oefening: Open een WMS
 
 Zoals eerder gezien, zijn WMS-streams webservices. In plaats van alle gegevens te downloaden, hebben we toegang tot de gegevens op basis van de locatie en het zoomniveau. Hier zullen we een WMS-service openen om luchtfoto's van het Waalse Gewest te bekijken, genaamd "orthophotoplans". De adressen van deze WMS-diensten zijn beschikbaar op internet.
 
@@ -142,8 +137,11 @@ Je zou dit als resultaat moeten krijgen:
 
 ![WMS laag toevoegen - luchtfoto's](../img/1_wms_wfs/1_wms_ortho.png)
 
+Probeer het nu opnieuw met een url uit Geobrussel:
 
-### Open een WFS
+`https://geoservices-urbis.irisnet.be/geowebcache/service/wmts?layer=urbisNL&request=getcapabilities`
+
+## Oefening: Open een WFS
 
 Zelfde procedure als voor het WMS. Laad het bestand <a href="data/WFS-BrusselsEnvironment.xml" download>"data/WFS-BrusselsEnvironment.xml"</a>.
 
@@ -153,7 +151,7 @@ Zelfde procedure als voor het WMS. Laad het bestand <a href="data/WFS-BrusselsEn
 
 Neem de tijd om de lagen in deze WFS-service te verkennen en let op het verschil met de WMS-service.
 
-### Open XYZ-tiles
+## Oefening: Open XYZ-tiles
 
 Het is ook mogelijk om "getegelde" gegevens toe te voegen die beschikbaar zijn op het web.
 Een gebruikelijke praktijk is om een OpenStreetMap of een achtergrond van satellietbeelden toe te voegen aan uw projecten van QGIS om uw weg in de ruimte te vinden.
@@ -162,7 +160,7 @@ Een gebruikelijke praktijk is om een OpenStreetMap of een achtergrond van satell
 
 Het adres van de OpenStreetMap-server is:`https://tile.openstreetmap.org/{z}/{x}/{y}.png`
 
-### Open de attributen tabel
+## Oefening: Open de attributen tabel
 
 Open een nieuw QGIS-project. Voeg de vectorlaag "/donnees/part_1/AD_2_Municipality.zip" toe
 
@@ -179,11 +177,9 @@ En de tafel verschijnt.
 
 ![Attributentabel](../img/2_attribute_table/1__table.png)
 
-### Selecteer elementen met de muis
+## Oefening: Selecteer elementen met de muis
 
-Klik in het menu op de knop.
-
-![Selectieknop](../img/3_selection_by_mouse/0_bouton.png)
+Klik in het menu op de knop. ![Selectieknop](../img/3_selection_by_mouse/0_bouton.png)
 
 U kunt een of meer elementen op de kaart selecteren. Zij zijn
 blauw gemarkeerd in de attributentabel.
@@ -195,9 +191,7 @@ weergaveopties. Test ze!
 
 ![Items selecteren in de attributentabel](../img/3_selection_by_mouse/2_display_options.png)
 
-Test de andere selectiemodi door op de pijl naar beneden van de knop te klikken:
-
-![Selectieknop](../img/3_selection_by_mouse/0_bouton.png)
+Test de andere selectiemodi door op de pijl naar beneden van de knop te klikken: ![Selectieknop](../img/3_selection_by_mouse/0_bouton.png) <br>
 
 
 
