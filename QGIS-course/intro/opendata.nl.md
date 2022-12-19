@@ -55,9 +55,6 @@ Met behulp van GIS-data van NGI/IGN kunt u deze tabellen samenvoegen om kaarten 
 - Walonië: 
   -  [geoportail.wallonie.be](https://geoportail.wallonie.be/)
 
-
-## Wereld
-
 ## Openstreetmap 
 
 Openstreetmap is een gratis basiskaart van de wereld, gemaakt door hobbyisten. QGIS bevat deze kaart al onder `XYZ-tiles`. Dit zijn alleen de gerenderde tegels, niet de brongegevens.
@@ -67,6 +64,8 @@ Het Duitse bedrijf geofabrik levert donwloads voor elk land, in de oorspronkelij
 
 De Europese downloads vind je hier:
 <https://download.geofabrik.de/europe.html> 
+
+Vooral een goede bron van straten, maar bevat ook andere gegevens zoals winkels, café's, etc. 
 
 ## Natural earth
 
