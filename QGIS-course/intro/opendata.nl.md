@@ -55,9 +55,6 @@ Met behulp van GIS-data van NGI/IGN kunt u deze tabellen samenvoegen om kaarten 
 - Walonië: 
   -  [geoportail.wallonie.be](https://geoportail.wallonie.be/)
 
-
-## Wereld
-
 ## Openstreetmap 
 
 Openstreetmap is een gratis basiskaart van de wereld, gemaakt door hobbyisten. QGIS bevat deze kaart al onder `XYZ-tiles`. Dit zijn alleen de gerenderde tegels, niet de brongegevens.
@@ -68,6 +65,8 @@ Het Duitse bedrijf geofabrik levert donwloads voor elk land, in de oorspronkelij
 De Europese downloads vind je hier:
 <https://download.geofabrik.de/europe.html> 
 
+Vooral een goede bron van straten, maar bevat ook andere gegevens zoals winkels, café's, etc. 
+
 ## Natural earth
 
 Natural earth bevat basis als je kaarten wilt maken op wereldschaal. 
@@ -75,6 +74,21 @@ Het bevat onder meer administratieve  grenzen, grotere waterlichamen etc.
 
 De download vind je hier: 
 <https://www.naturalearthdata.com/downloads/>
+
+## Lagen koppelen aan een tabel
+
+Je start met een Basislaag: 
+- Gemeenten, landen, straten, sectoren
+   - Unieke ID of naam
+- Een tabel zoals een excel file toevoegen aan project. 
+- Dit is de Koppeltabel zonder geometrie 
+   - met dezelfde Unieke ID 
+   - ⇒ Die kan je koppelen  
+   - Zoals VERT.ZOEKEN in excel
+
+**⇒ Rechtsklik op de laag > Eigenschappen > Koppelingen → Plus knop > Kies tabel en koppelveld en doelveld**
+
+![Joins in QGIS](../img/4_opendata/joins.png)
 
 ## Oefening
 
@@ -89,5 +103,3 @@ De download vind je hier:
      3) Kies "Joins" en klik vervolgens op het plusteken
      4) Verbind de sectoren op veld "CD_SECTOR" Bevolking op veld "CD_SECTOR"
      5) Kleur de polygonen van de sectoren in met het veld TOTAL (=aantal mensen) van bevolking
-   
-![Joins in QGIS](../img/4_opendata/joins.png)

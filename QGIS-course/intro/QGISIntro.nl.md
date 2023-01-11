@@ -193,5 +193,18 @@ weergaveopties. Test ze!
 
 Test de andere selectiemodi door op de pijl naar beneden van de knop te klikken: ![Selectieknop](../img/3_selection_by_mouse/0_bouton.png) <br>
 
+## Extra oefening: kaartlaag bewerken / layouten 
 
+Event Planning: 
+
+- Maak een project “eventplan.qgz” 
+  - Voeg Openstreetmap toe als achtergrond (XYZ)
+  - Maak 1 polygonen-laag “terrein” en geeft die veld voor de naam (text)
+  - Maak 1 lijnen-laag  “evacuatie_route” met veld ID (getal) en naam (text)
+    - ⇒ Slaag beide lagen op in 1 geopackage “evacuatie_plan.gpkg”
+  - Teken rond de groenplaats in Antwerpen een polygoon (terrein)
+    - Maak de kleur rood en maak ook half transparant. 
+  - Teken evacuatie route naar het stadhuis en geef die id 1 en een naam
+  - Teken evacuatie route naar de meir en geef die id 2 en een naam
+    - Gebruik een layout met pijlen.
 
