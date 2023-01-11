@@ -2,6 +2,12 @@
 
 Webpage for KGIS, made the mkdocs: https://www.mkdocs.org/
 
+install: 
+
+    pip install mkdocs
+    pip install mkdocs-bootstrap4
+    pip install pymdown-extensions
+
 Compile: 
 
     cd src 
